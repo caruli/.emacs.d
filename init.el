@@ -32,9 +32,11 @@
 
 
 
-  
+(use-package auto-complete
+  :ensure t
+  :config 
 (ac-config-default) 
-(setq ac-auto-show-menu nil)
+(setq ac-auto-show-menu nil))
 
 
 
