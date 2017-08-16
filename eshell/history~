@@ -1,0 +1,7 @@
+echo $PS1
+echo $PS
+echo $PS2
+pwd
+cp .bashrc .bashrc-backup
+ls -la
+ls -a
