@@ -5,3 +5,20 @@ pwd
 cp .bashrc .bashrc-backup
 ls -la
 ls -a
+cd ~/
+cd Downloads/
+cd src/
+ls
+cd emacs-25.2/
+echo $PATH 
+ls
+ls
+cd ~/Downloads/
+cd src/
+ls
+cd emacs-25.2/
+ls
+pwd
+cd ..
+ls
+cd emacs-25.2/

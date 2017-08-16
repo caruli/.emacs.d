@@ -32,11 +32,30 @@
 
 
 
-(use-package auto-complete
+;; (use-package auto-complete
+;;   :ensure t
+;;   :config 
+;; (ac-config-default) 
+;; (setq ac-auto-show-menu nil))
+
+
+
+(use-package company
   :ensure t
-  :config 
-(ac-config-default) 
-(setq ac-auto-show-menu nil))
+  :init
+  (add-hook 'after-init-hook 'global-company-mode)
+  (global-set-key "\t" 'company-complete-common)
+  (setq company-minimum-prefix-length 2))
+  
+ 
+
+
+
+
+
+
+
+
 
 
 
@@ -107,7 +126,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (helm auto-complete workgroups2 use-package dash async))))
+    (company-shell company readline-complete helm auto-complete workgroups2 use-package dash async))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
